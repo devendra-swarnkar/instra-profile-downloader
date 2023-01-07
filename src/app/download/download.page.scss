@@ -1,0 +1,40 @@
+ion-card.imgcard{
+    border-radius: 20px;
+    --background: #ffe6e7;
+    img{
+        width: 100%;
+    }
+    ion-item{
+        --background:#ffe6e7;
+    }
+
+}
+ion-content{
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+}
+ion-buttons.button {
+    
+    
+   
+    ion-button.card-btn{
+        --border-radius: 10px;
+        --border-color: #aeaeae;
+        --border-width: 1px;
+        --border-style: solid;
+        --background-hover: #9686e8;
+        --background-focused: #ac94dace;
+    }
+   
+
+}
+.username{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000000c1;
+}
+ion-avatar.avatar{
+    height: 50px;
+    width: 50px;
+}

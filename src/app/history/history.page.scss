@@ -1,0 +1,16 @@
+.userimg{
+    margin-right: 15px;
+}
+ion-card{
+    border-radius:25px;
+    background-color: rgb(255, 237, 236,1);
+    ion-toolbar{
+        --background:  rgb(255, 237, 236,1);
+    }
+}
+
+ion-content{
+    position: relative;
+    height: 500%;
+    overflow-y: auto;
+}

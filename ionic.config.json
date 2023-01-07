@@ -1,0 +1,7 @@
+{
+  "name": "Instra profile downloader",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

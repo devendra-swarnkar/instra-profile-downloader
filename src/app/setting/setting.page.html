@@ -1,0 +1,35 @@
+
+  <ion-toolbar>
+    <ion-title>{{"Setting" | translate}}</ion-title>
+    <ion-list-header>General</ion-list-header>
+    <ion-item detail="true">
+      <ion-thumbnail slot="start">
+        <ion-img src="assets/icon/folder.png"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2><b>{{"Storge folder" |translate}}</b></h2>
+        <p>{{"Internal storage/ Insta downloader"|translate}}</p>
+      </ion-label>
+    </ion-item>
+    <ion-item detail="true" (click)="changeLang()">
+      <ion-thumbnail slot="start">
+        <ion-img src="assets/icon/Language.png"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2><b>{{"Selects Your Lauguage" | translate }}</b></h2>
+        <p>{{ langList[currentLang] }}</p>
+      </ion-label>
+    </ion-item>
+    <ion-item  >
+      <ion-thumbnail slot="start">
+        <ion-img src="assets/icon/moon.png"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2><b>{{"Dark mode" | translate }}</b></h2>
+      </ion-label>
+      <ion-toggle [(ngModel)]="theme" (ionChange)="changeTheme($event)" ></ion-toggle>
+    </ion-item>
+    <hr>
+   
+    
+  </ion-toolbar>

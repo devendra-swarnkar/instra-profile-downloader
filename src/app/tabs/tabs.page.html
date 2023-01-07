@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+   <div class="content-section">
+    <div class="top-sec">
+  
+  
+      <ion-toolbar class="ion-padding">      <img src="/assets/insta3d.png" height="50">
+
+  <ion-text color="light">
+    
+    <h1 class="app-header">Insta<br> profile <br>downloader</h1>
+  
+  </ion-text>
+      </ion-toolbar>
+  
+        <ion-item lines="none" class="searchbarcontainer" mode="md">
+        <ion-icon slot="start" src="/assets/link.svg"></ion-icon>
+        <ion-input debounce="3000" placeholder="Username"  (ionChange)="search($event)" enterkeyhint="search">
+        </ion-input>
+      </ion-item>
+      
+      
+
+
+    
+    </div>
+    
+    
+    <ion-card class="cardd">
+        <div class="topbar"></div>
+        <ion-card-content>
+            <ion-tabs>
+                <ion-tab-bar slot="top" >
+                  <ion-tab-button tab="download">
+                    <ion-icon name="cloud-download-outline"></ion-icon>
+                    <ion-label>{{"Download" | translate}}</ion-label>
+
+                  </ion-tab-button>
+                  <ion-tab-button tab="history">
+                    <ion-icon name="people-outline"></ion-icon>
+        
+                    <ion-label>{{"History" | translate}}</ion-label>
+                  </ion-tab-button>
+                  <ion-tab-button tab="setting">
+                    <ion-icon name="settings-outline"></ion-icon>
+                    <ion-label>{{"Setting" | translate}}</ion-label>
+                  </ion-tab-button>
+               </ion-tab-bar>  
+                         
+            </ion-tabs>
+            
+        </ion-card-content>
+  
+    </ion-card>
+   </div>
+  </ion-content>

@@ -1,0 +1,30 @@
+<ion-content>
+  
+  
+  <ion-toolbar >
+    <ion-title>{{"History" | translate}}</ion-title>
+    <ion-list-header>{{ "Total" |translate}} <ion-badge mode="ios" color="light">{{history.length}}</ion-badge> </ion-list-header>
+    <ion-buttons slot="end">
+      <ion-button (click)="getHistory()"><ion-icon name="refresh" slot="icon-only"></ion-icon></ion-button>
+    <ion-button (click)="clearHistory()" color="danger"><ion-icon name="trash" slot="icon-only"></ion-icon></ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+
+  <ion-card *ngFor=" let item of history" (click)="showUserModal(item.image, item.username)">
+    <ion-card-content>
+      <ion-toolbar>
+        <ion-avatar slot="start" class="userimg">
+          <img [src]="item.image" alt="dp" >
+        </ion-avatar>
+        <ion-label>
+          <p>{{item.username}}<br> <small>{{item.date }}</small></p>
+         
+          
+        </ion-label>
+      </ion-toolbar>
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-toolbar></ion-toolbar>
+</ion-content>

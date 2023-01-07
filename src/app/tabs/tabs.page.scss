@@ -1,0 +1,91 @@
+
+ion-content{
+    .content-section{
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+    }
+}
+ion-toolbar, ion-item{
+    --background: #00000000;
+}
+ion-item.searchbarcontainer{
+    padding: 20px;
+    ion-input{
+        --padding-top:20px;
+        --padding-bottom:20px;
+    }
+    --background: #ffffff3d;
+    --color: var(--ion-color-light);
+
+    --border-radius: 20px;
+   
+    
+    
+        --border: 0.5px solid lightgrey;
+}
+.app-header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.top-sec{
+    position: sticky;
+    top:0;
+    height: 88vh;
+}
+
+ion-card.cardd{
+    height: 95vh;
+    margin: 0;
+    --background: var(--ion-color-light);
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    ion-card-content{
+        height: 100%;
+    }
+    }
+
+    .topbar{
+        
+        background-color: #e6e3e4 ;
+        border-radius: 45px;
+        width: 35%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 10px;
+    }
+
+ion-tab-button{
+    --color-selected: var(--ion-color-primary);
+    --color-focused: var(--ion-color-primary);
+    --background: #d8e4f06c;
+   
+    border-radius: 15px;
+    margin: 10px;
+    &.tab-selected{
+        background: #0026ff40;
+    }
+}
+ion-toolbar.tabtolbar{
+    --background: #adadad00;
+}
+
+ion-tab-bar{
+    height: 70px;
+    --background: #00000000;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

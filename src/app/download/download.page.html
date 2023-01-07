@@ -1,0 +1,39 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  
+  <ion-toolbar class="ion-padding-end"> 
+    <ion-title>{{"Downloads" | translate}}</ion-title>
+    <ion-text color="medium" slot="end">{{itemCount}} Items</ion-text>
+  </ion-toolbar> 
+  <ng-container *ngFor="let img of downloads">
+
+    
+  
+  <ion-card class="imgcard" mode="ios" button >
+   
+      <img src="assets/profile-demo.png" alt="Profile-picture" >
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-avatar class="avatar" slot="start">
+            <img [src]="img.image" alt="">
+          </ion-avatar>
+          <ion-label class="username">
+           {{img.username}}
+            
+          </ion-label>
+          <ion-buttons slot="end" class="button">
+            
+            <ion-button class="card-btn">
+              <ion-icon name="trash-outline" ></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </ion-card-content>
+  </ion-card>
+ 
+</ng-container>
+<ion-toolbar></ion-toolbar>
+</ion-content>
